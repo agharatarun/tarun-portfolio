@@ -31,15 +31,15 @@ export default function Portfolio() {
           </div>
           <div className="flex items-center gap-4">
             <button 
-  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} 
-  className="p-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
->
-  {theme === 'dark' ? (
-    <Sun size={18} className="text-yellow-400" /> 
-  ) : (
-    <Moon size={18} />
-  )}
-</button>
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} 
+              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800"
+            >
+              {theme === 'dark' ? (
+                <Sun size={18} className="text-yellow-400" /> 
+              ) : (
+                <Moon size={18} />
+              )}
+            </button>
             <a href={resumeLink} className="flex items-center gap-2 bg-sky-500 text-white px-4 py-2 rounded-lg font-bold text-xs shadow-lg shadow-sky-500/20">
               <Download size={14} /> RESUME
             </a>
@@ -194,7 +194,7 @@ function ProjectCard({ title, icon, tag, link, desc }: { title: string, icon: Re
           {["HTML", "Tailwind", "Apps Script"].map(t => <span key={t} className="text-[8px] font-bold text-slate-400 px-2 py-0.5 border border-slate-200 dark:border-slate-800 rounded uppercase">{t}</span>)}
         </div>
       </div>
-      <a href={link} target="_blank" className="mt-8 flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 group-hover:bg-sky-500 group-hover:text-white transition-all">
+      <a href={link} target="_blank" className="mt-8 flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-950 group-hover:bg-sky-500 group-hover:text-white transition-all">
         <span className="font-bold text-xs uppercase tracking-widest">Live Demo</span>
         <ExternalLink size={16}/>
       </a>
