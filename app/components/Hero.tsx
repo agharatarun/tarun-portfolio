@@ -31,7 +31,7 @@ const cardRows = [
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-20 pb-10">
+    <section className="flex items-center pt-20 pb-10">
       <div className="max-w-5xl mx-auto px-6 w-full">
 
         {/* ── unified card: photo left, copy right on desktop; stacked on mobile ── */}

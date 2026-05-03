@@ -2,7 +2,7 @@ import { Mail, Phone, Link2, Send } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-4">
+    <section id="contact" className="py-12">
       <div className="max-w-5xl mx-auto px-6">
         <div className="max-w-[920px] mx-auto text-center">
           {/* Label */}
@@ -54,7 +54,7 @@ export function Contact() {
               <Phone size={15} /> +91-9327133900
             </a>
             <a
-              href="https://www.linkedin.com/in/tarunkumar-aghara"
+              href="https://www.linkedin.com/in/agharatarun"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -69,10 +69,6 @@ export function Contact() {
             >
               <Link2 size={15} /> LinkedIn Profile
             </a>
-          </div>
-
-          <div className="reveal mt-3 flex justify-center">
-            
           </div>
         </div>
       </div>

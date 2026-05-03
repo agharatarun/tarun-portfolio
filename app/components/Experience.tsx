@@ -63,7 +63,7 @@ const roles: Role[] = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-2">
+    <section id="experience" className="py-12">
       <div className="max-w-5xl mx-auto px-6">
         {/* Header */}
         <div className="reveal flex items-center gap-3 mb-2">
