@@ -1,21 +1,20 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans:    var(--font-sans);
-  --font-mono:    var(--font-mono);
-  --font-display: var(--font-display);
+  --font-sans:    "Instrument Sans", sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --font-display: "Syne", sans-serif;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font-sans), sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* utility classes that components rely on */
-.font-display { font-family: var(--font-display), sans-serif; }
-.font-mono    { font-family: var(--font-mono), monospace; }
+.font-display { font-family: "Syne", sans-serif !important; }
+.font-mono    { font-family: "JetBrains Mono", monospace !important; }
 
 /* ── Theme tokens ─────────────────── */
 :root, [data-theme="dark"] {
