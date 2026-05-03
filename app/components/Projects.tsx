@@ -66,7 +66,7 @@ const projects: Project[] = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-12">
       <div className="max-w-5xl mx-auto px-6">
         {/* Header */}
         <div className="reveal flex items-center gap-3 mb-2">
@@ -79,7 +79,7 @@ export function Projects() {
         <h2 className="reveal font-display font-extrabold text-[clamp(1.6rem,3vw,2.2rem)] tracking-tight text-[var(--text)] mb-2">
           Side Projects &amp; Live Apps
         </h2>
-        <p className="reveal text-[var(--text-2)] text-sm mb-12 max-w-[560px] leading-relaxed">
+        <p className="reveal text-[var(--text-2)] text-sm mb-8 max-w-[560px] leading-relaxed">
           Real-world applications built with HTML, Tailwind CSS, Google Apps Script &amp; Google Sheets —
           solving genuine problems for community and business.
         </p>

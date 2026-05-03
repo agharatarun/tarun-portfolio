@@ -7,7 +7,7 @@ const stats = [
 
 export function StatsBar() {
   return (
-    <div className="max-w-5xl mx-auto px-6 mb-20 reveal">
+    <div className="max-w-5xl mx-auto px-6 mb-2 reveal">
       <div className="
         grid grid-cols-2 md:grid-cols-4
         divide-x divide-y md:divide-y-0 divide-[var(--border)]

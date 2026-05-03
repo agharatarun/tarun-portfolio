@@ -74,7 +74,7 @@ const categories: Category[] = [
 
 export function TechStack() {
   return (
-    <section id="stack" className="py-20">
+    <section id="stack" className="py-12">
       <div className="max-w-5xl mx-auto px-6">
         {/* Header */}
         <div className="reveal flex items-center gap-3 mb-2">
@@ -87,7 +87,7 @@ export function TechStack() {
         <h2 className="reveal font-display font-extrabold text-[clamp(1.6rem,3vw,2.2rem)] tracking-tight text-[var(--text)] mb-2">
           Full-Spectrum Engineering
         </h2>
-        <p className="reveal text-[var(--text-2)] text-sm mb-12 max-w-[520px] leading-relaxed">
+        <p className="reveal text-[var(--text-2)] text-sm mb-8 max-w-[920px] leading-relaxed">
           From cloud-native backend systems to modern reactive UIs — 13 years of deliberate
           skill-building across the entire stack.
         </p>
