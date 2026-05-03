@@ -14,7 +14,7 @@ const links = [
 // Replace this with your actual Google Drive direct-download link.
 // Format: https://drive.google.com/uc?export=download&id=YOUR_FILE_ID
 const RESUME_URL =
-  "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID";
+  "https://drive.google.com/file/d/16_TOLR69OwWarV99EMX3UDdM-0avfn6z";
 
 export function Navbar() {
   return (
