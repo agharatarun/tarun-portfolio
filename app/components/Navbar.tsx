@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Download, Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { PrintResume } from "./PrintResume";
 
 const links = [
   { href: "#stack",      label: "Stack"      },
@@ -41,6 +42,10 @@ export function Navbar() {
 
         {/* Right controls */}
         <div className="flex items-center gap-2 shrink-0">
+          {/* Print resume */}
+          <PrintResume />
+
+          {/* Download from Drive */}
           <a
             href={RESUME_URL}
             target="_blank"
