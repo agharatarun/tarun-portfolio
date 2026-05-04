@@ -1,6 +1,16 @@
 import Image from "next/image";
 import { MapPin, CheckCircle, ExternalLink } from "lucide-react";
 import { personal, certifications, heroCardRows } from "../data/resume";
+import { highlightText } from "../utils/textFormatters";
+
+const heroHighlights = {
+  "Azure AKS": "text-sky-400 font-medium",
+  "REST APIs": "text-sky-400 font-medium",
+  "Kafka & Spark": "text-indigo-400 font-medium",
+  "microservices": "text-indigo-400 font-medium",
+  "monolith-to-cloud modernization": "text-indigo-400 font-medium",
+  "React/Tailwind": "text-emerald-400 font-medium",
+};
 
 export function Hero() {
   return (
@@ -11,7 +21,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-8 items-start">
 
             {/* Photo + quick stats */}
-            <div className="flex flex-col items-center gap-3 shrink-0 w-full sm:w-[160px]">
+            <div className="flex delay-300 animate-float flex-col items-center gap-3 shrink-0 w-full sm:w-[160px]">
               <div className="relative w-[110px] h-[110px] rounded-full ring-2 ring-sky-400/60 shadow-[0_0_24px_rgba(56,189,248,.4)] animate-pulse-glow overflow-hidden">
                 <Image src={personal.photo} alt={personal.name} fill className="object-cover object-top" sizes="110px" priority />
               </div>
@@ -36,23 +46,21 @@ export function Hero() {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-5 h-px bg-sky-400 shrink-0" />
-                <span className="font-mono text-[11px] tracking-[2px] uppercase text-sky-400">Available for Senior Roles</span>
+                <span className="font-mono text-[11px] tracking-[2px] uppercase text-sky-400">Available for Lead Roles</span>
               </div>
-              <h1 className="animate-fade-up delay-100 font-display font-extrabold text-[clamp(2.2rem,5vw,3.6rem)] leading-[1.05] tracking-tight bg-gradient-to-br from-[var(--text)] via-[var(--text)] to-[var(--text-2)] bg-clip-text text-transparent mb-2">
+              <h1 className="animate-fade-up delay-100 font-display font-extrabold text-[clamp(1.2rem,5vw,2.6rem)] leading-[1.05] tracking-tight bg-gradient-to-br from-[var(--text)] via-[var(--text)] to-[var(--text-2)] bg-clip-text text-transparent mb-2">
                 {personal.name}
               </h1>
               <p className="animate-fade-up delay-200 font-display text-base sm:text-lg font-semibold text-indigo-400 mb-4">
                 {personal.title}
               </p>
-              <p className="animate-fade-up delay-300 text-[var(--text-2)] text-[0.9rem] leading-relaxed mb-5">
-                13+ years engineering enterprise-grade, cloud-native systems for AT&amp;T — one of the world&apos;s largest telecoms. Specializing in{" "}
-                <span className="text-sky-400 font-medium">Azure AKS</span>, real-time stream processing with{" "}
-                <span className="text-indigo-400 font-medium">Kafka &amp; Spark</span>, and full-stack modernization from monolith to microservices.
+              <p className="animate-fade-up delay-300 text-[var(--text-2)] text-[0.9rem] leading-relaxed mb-5 text-justify">
+                {highlightText(personal.summary, heroHighlights)}
               </p>
               <div className="animate-fade-up delay-300 flex flex-wrap gap-2">
                 {certifications.map((c) => (
                   <a key={c.code} href={c.url} target="_blank" rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border font-mono text-[11px] font-medium transition-all duration-200 hover:-translate-y-0.5 ${c.color}`}>
+                    className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full border font-mono text-[11px] font-medium transition-all duration-200 hover:-translate-y-0.5 ${c.color}`}>
                     <CheckCircle size={10} />
                     {c.code} · {c.name}
                     <ExternalLink size={9} className="opacity-60" />

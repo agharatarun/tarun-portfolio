@@ -8,34 +8,32 @@
 export const personal = {
   name:        "Tarunkumar Aghara",
   initials:    "TA",
-  title:       "Java Tech Lead & Cloud Architect",
+  title:       "JAVA MICROSERVICES & CLOUD SPECIALIST · FULL STACK LEAD",
   location:    "Pune, India",
   phone:       "+91-9327133900",
   email:       "agharatarun@gmail.com",
-  linkedin:    "https://www.linkedin.com/in/tarunkumar-aghara",
+  linkedin:    "https://www.linkedin.com/in/agharatarun",
   photo:       "/profile.jpg",
   available:   true,
+  portfolio:   "https://tarun-portfolio-sooty.vercel.app/",
   summary:
-    "Results-driven Java Tech Lead with 13+ years delivering enterprise-grade, cloud-native solutions for AT&T and HCLTech. " +
-    "Expert in Azure AKS microservices, real-time stream processing (Kafka & Spark), and monolith-to-cloud modernization. " +
-    "GitHub Copilot certified (GH-300); hands-on with GenAI integration. " +
-    "Recognized mentor and go-to POC expert; multiple ACE & SDU awards.",
+    "I bring over 14 years of experience building scalable, high-performance solutions for enterprise-grade systems. I've specialized in web & backend development, with a strong focus on REST APIs, microservices, real-time stream processing (Kafka & Spark) & monolith-to-cloud modernization. I combine deep backend expertise with growing Full Stack capabilities (React/Tailwind) and a passion for mentoring teams to deliver value at scale.",
 };
 
 // ── Stats bar ────────────────────────────────────────────────────────────────
 export const stats = [
-  { num: "13+",  label: "Years Enterprise Java"  },
-  { num: "5+",   label: "Years Azure Cloud"       },
+  { num: "14+",  label: "Years Enterprise Java"  },
+  { num: "6+",   label: "Years Azure Cloud"       },
   { num: "6+",   label: "Apps Shipped on AKS"     },
-  { num: "ACE",  label: "×2 · BEST SDU · Bravo"  },
+  { num: "×2 ACE",  label: "×3 POB · Best Innovation · BEST SDU"  },
 ];
 
 // ── Hero card rows ───────────────────────────────────────────────────────────
 export const heroCardRows = [
-  { label: "Role",   value: "Java Tech Lead"       },
+  { label: "Role",   value: "Sr. Tech Specialist"       },
   { label: "Domain", value: "Telecom · FinTech"    },
   { label: "Client", value: "AT&T · Mastercard"    },
-  { label: "Stack",  value: "Azure · Kafka · K8s"  },
+  { label: "Stack",  value: "Java · SpringBoot"  },
 ];
 
 // ── Certifications ───────────────────────────────────────────────────────────
@@ -45,21 +43,21 @@ export const certifications = [
     name:  "GitHub Copilot",
     issuer: "Microsoft / GitHub",
     color: "text-emerald-400 border-emerald-400/30 bg-emerald-400/10 hover:bg-emerald-400/20",
-    url:   "https://credentials.example.com/gh-300", // ← replace with your real URL
+    url:   "https://www.credly.com/badges/1a6693b8-3eba-4eef-9b9c-5439b12fa780/public_url",
   },
   {
     code:  "AI-900",
     name:  "Azure AI Fundamentals",
     issuer: "Microsoft",
     color: "text-indigo-400 border-indigo-400/30 bg-indigo-400/10 hover:bg-indigo-400/20",
-    url:   "https://credentials.example.com/ai-900", // ← replace with your real URL
+    url:   "https://learn.microsoft.com/en-us/users/tarunkumaraghara-2866/credentials/ff3f709da1c61e89",
   },
   {
     code:  "AZ-104",
     name:  "Azure Administrator",
     issuer: "Microsoft",
     color: "text-orange-400 border-orange-400/30 bg-orange-400/10 hover:bg-orange-400/20",
-    url:   "https://credentials.example.com/az-104", // ← replace with your real URL
+    url:   "https://learn.microsoft.com/api/credentials/share/en-us/tarunaghara/228F208F5E5BB928?sharingId=2D1AA2ADFEEA7C15",
   },
 ];
 
@@ -91,14 +89,17 @@ export const techCategories: TechCategory[] = [
     glowClass: "glow-sky",
     iconBg:    "bg-sky-400/10 text-sky-400",
     chips: [
-      { label: "Java",          yrs: "13 yrs", color: "text-sky-400 border-sky-400/30" },
-      { label: "Spring Boot",   yrs: "10 yrs", color: "text-sky-400 border-sky-400/30" },
-      { label: "Microservices",              color: "text-sky-300/70 border-sky-400/20" },
+      { label: "Java", color: "text-sky-400 border-sky-400/30" },
+      { label: "Spring Boot", color: "text-sky-400 border-sky-400/30" },
+      { label: "Microservices", color: "text-sky-400 border-sky-400/30" },
       { label: "REST APIs" },
-      { label: "PL/SQL",        yrs: "13 yrs" },
+      { label: "Database · PL/SQL", },
       { label: "JUnit · Mockito" },
       { label: "Maven" },
-      { label: "EJB · DAO/DTO" },
+      { label: "gRPC · Beginner" },
+      { label: "Scripting" },
+      { label: "Web Server · App Server" },
+      { label: "ArcGIS" },
     ],
   },
   {
@@ -108,16 +109,13 @@ export const techCategories: TechCategory[] = [
     glowClass: "glow-indigo",
     iconBg:    "bg-indigo-400/10 text-indigo-400",
     chips: [
-      { label: "Azure AKS",        yrs: "5 yrs", color: "text-indigo-400 border-indigo-400/30" },
-      { label: "Azure Functions",               color: "text-indigo-400 border-indigo-400/30" },
-      { label: "Azure Key Vault",               color: "text-indigo-400 border-indigo-400/30" },
-      { label: "Kubernetes" },
-      { label: "Docker" },
-      { label: "Apache Kafka" },
-      { label: "Apache Spark" },
+      { label: "Microsoft Azure - SaaS · PaaS · IaaS", color: "text-indigo-400 border-indigo-400/30" },
+      { label: "Azure - Functions · App Service", color: "text-indigo-400 border-indigo-400/30" },
+      { label: "Azure - Key Vault · Storage", color: "text-indigo-400 border-indigo-400/30" },
+      { label: "Azure DevOps · CI/CD · App Insights", color: "text-indigo-400 border-indigo-400/30" },
+      { label: "Kubernetes · Docker" },
+      { label: "Apache Kafka  · Spark",  color: "text-emerald-400 border-emerald-400/30" },
       { label: "Jenkins · SonarQube" },
-      { label: "ArcGIS · IBM MQ" },
-      { label: "GitHub Copilot", color: "text-emerald-400 border-emerald-400/30" },
     ],
   },
   {
@@ -128,11 +126,10 @@ export const techCategories: TechCategory[] = [
     iconBg:    "bg-emerald-400/10 text-emerald-400",
     chips: [
       { label: "React · Angular",     color: "text-emerald-400 border-emerald-400/30" },
-      { label: "Tailwind CSS",        color: "text-emerald-400 border-emerald-400/30" },
-      { label: "HTML5 · CSS3" },
-      { label: "JavaScript" },
+      { label: "Tailwind · Bootstrap",        color: "text-emerald-400 border-emerald-400/30" },
+      { label: "HTML5 · CSS" },
+      { label: "JavaScript · Typescript", color: "text-blue-400 border-blue-400/30" },
       { label: "jQuery · AJAX" },
-      { label: "Bootstrap" },
       { label: "Google Apps Script",  color: "text-orange-400 border-orange-400/30" },
       { label: "Google Sheets API",   color: "text-orange-400 border-orange-400/30" },
     ],
@@ -151,51 +148,61 @@ export interface Role {
 
 export const roles: Role[] = [
   {
-    title:   "Java Tech Lead",
+    title:   "Sr. Tech Specialist",
     company: "HCLTech · GenAI & Mastercard Proposals",
-    period:  "2025 – Present",
+    period:  "OCT 2025 – Present",
     location:"Pune, MH",
     current: true,
     bullets: [
       "Architecting GenAI-powered enterprise solutions integrating LLM capabilities into Spring Boot microservices for Mastercard proposals.",
-      "Accelerating development velocity with GitHub Copilot (GH-300); evaluating and productionizing AI tooling at scale.",
-      "Applying Azure AI (AI-900) knowledge to position HCL's offerings at the forefront of enterprise AI adoption.",
+      "GenAI Innovation & Architecture: Conceptualized and architected a GenAI-driven Talent Management solution aimed at optimizing resource upskilling and reducing bench time; designed end-to-end wireframes and spearheaded technical feasibility collaborations with GenAI COE experts.",
+      "Strategic Initiatives & POCs: rapidly evaluating and validating new technologies (AI/Copilot tooling, streaming frameworks, serverless patterns etc.) that shaped project architecture decisions.",
+      "Foundational exposure to gRPC, understanding protocol buffers, contract-first API design and suitability for high-performance inter-service communication.",
+      "Basic understanding on reactive programming, including non-blocking execution, event-driven flows, back-pressure concepts, with readiness to apply using Project reactor/Rx based implementation as required.",
+      "Proactively pursue technical growth through certifications, self-paced learning and expert-led tutorials to ensure precise and up-to-date project execution.",
+      "Talent Acquisition & Mentorship: Actively participated in the recruitment lifecycle, evaluating senior technical talent on system design, problem-solving etc. to ensure the onboarding of top-tier engineering teams.",
     ],
   },
   {
-    title:   "Java Tech Lead",
+    title:   "Java Technical Lead",
     company: "Tech Mahindra · Client: AT&T Services Inc.",
-    period:  "Feb 2019 – 2025",
-    location:"Pune / Plano TX / Middletown NJ / Chicago IL",
+    period:  "Feb 2019 – OCT 2025",
+    location:"Pune, MH",
     current: false,
     bullets: [
-      "Architected 6+ mission-critical apps (Vehicle Tracking, Smart Geofence, Tech Tracker, iLocate) on Azure AKS — Docker, Kubernetes, CI/CD via Jenkins & SonarQube.",
-      "Engineered real-time IoT stream processing with Apache Spark & Kafka, building dynamic technician-to-vehicle associations from live sensor data.",
-      "Designed serverless Azure Functions (queue, timer & blob triggers) integrated with Key Vault, App Insights, ArcGIS & IBM MQ.",
+      "Architected 6+ mission-critical apps (Vehicle Tracking, Smart Geofence, Tech Tracker, iLocate) on Azure AKS — Docker, Kubernetes, CI/CD via Jenkins & SonarQube; enabled zero-downtime CI/CD deployments at enterprise scale for AT&T Business dispatch operations.",
+      "These apps significantly optimize dispatch area operations through real-time insights, location intelligence, and technician efficiency metrics.",
       "Led monolith → microservices modernization and on-prem → Azure cloud migration across multiple AT&T Business systems.",
-      "Mentored 5+ engineers; recognized with ACE (×2), SPOT, Project Person of the Month, and BEST SDU Award.",
+      "Engineered real-time IoT stream processing with Apache Spark & Kafka, building real-time dynamic associations from live sensor data.",
+      "Designed serverless Azure Functions (queue, timer & blob triggers) integrated with table/container storage, Key Vault, Kafka, IBM MQ, App Insights and ArcGIS enabling serverless, event-driven processing for high-throughput scenarios enhancing security, data management, and geospatial intelligence within the application ecosystem",
+      "Experienced in designing and developing RESTful APIs using the Spring Boot framework, implementing robust and scalable solutions to facilitate efficient communication between applications.",
+      "Proficient in unit testing methodologies using JUnit, Mockito, Azurite, and MockRunner JMS to ensure the robustness and reliability of software components, with a focus on comprehensive testing and quality assurance.",
     ],
   },
   {
     title:   "Java Full Stack Developer",
     company: "Tech Mahindra · Client: AT&T Services Inc.",
     period:  "Oct 2014 – Feb 2019",
-    location:"Pune, MH",
+    location:"Plano TX · Middletown NJ · Chicago IL",
     current: false,
     bullets: [
-      "Built OPUS — core AT&T platform handling activation, sales & back-office ops across wireless, IPTV & VoIP using Spring, REST, jQuery & PL/SQL.",
-      "Created Sitemover (automated deployment tool, nominated Best Innovative Product) and Torus (responsive bid management app).",
+      "OPUS Platform (Mission-Critical): Engineered full-stack features for AT&T's flagship sales and activation engine, integrating Spring, JSP, JQuery, REST APIs, and PL/SQL to support Wireless, IPTV, and VoIP operations.",
+      "Developed and maintained multiple enterprise web applications supporting Circuit IDs, BTNs, BANs, SOR tracking, and contract management.",
       "Developed enterprise apps supporting Circuit IDs, BTNs, BANs, SOR tracking and contract management.",
     ],
   },
   {
     title:   "Java Developer (Early Career)",
-    company: "Tech Mahindra · Mumbai, MH",
+    company: "Tech Mahindra · Client: AT&T Services Inc.",
     period:  "Apr 2012 – Sep 2014",
     location:"Mumbai, MH",
     current: false,
     bullets: [
-      "Completed ITP training (Java, PL/SQL, Shell Scripting, Telecom OSS/BSS); built Mobius (DAS ops app) and Acme Advertising Service — ranked 2nd best ITP tech app.",
+      "Mobius (OSS/BSS Integration): Designed and launched a Java-based application to streamline Distributed Antenna System (DAS) operations, boosting site-build efficiency via responsive Bootstrap and jQuery modernization using Java backend.",
+      "Built Torus, a responsive bid management web app using Java, SQL, HTML5, CSS3, Bootstrap, and jQuery, adopting mobile-first and adaptive design principles.",
+      "Created Sitemover, an automated deployment tool with tracking and reporting features – nominated for Best Innovative Product.",
+      "Completed ITP training (Java, PL/SQL, Shell Scripting, Software Engineering, Telecom OSS/BSS)",
+      "Designed and developed Acme Advertising Service (AAS), a product promotion portal, ranked 2nd best tech app by the ITP group.",
     ],
   },
 ];

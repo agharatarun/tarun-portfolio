@@ -1,5 +1,16 @@
 import { Briefcase } from "lucide-react";
 import { roles } from "../data/resume";
+import { highlightText } from "../utils/textFormatters";
+
+const experienceHighlights = {
+  "GenAI Innovation & Architecture:": "text-sky-400 font-medium",
+  "Strategic Initiatives & POCs:": "text-sky-400 font-medium",
+  "GenAI": "text-indigo-400 font-medium",
+  "microservices modernization": "text-indigo-400 font-medium",
+  "real-time": "text-indigo-400 font-medium",
+  "serverless": "text-indigo-400 font-medium",
+  "React/Tailwind": "text-emerald-400 font-medium",
+};
 
 export function Experience() {
   return (
@@ -35,7 +46,7 @@ export function Experience() {
                   <p className="font-mono text-[10px] text-[var(--text-2)] mb-3">{r.location}</p>
                   <ul className="flex flex-col gap-1.5">
                     {r.bullets.map((b, i) => (
-                      <li key={i} className="relative pl-4 text-[var(--text-2)] text-[0.82rem] leading-relaxed before:content-['→'] before:absolute before:left-0 before:text-sky-400 before:text-[0.75rem]">{b}</li>
+                      <li key={i} className="relative pl-4 text-[var(--text-2)] text-[0.82rem] leading-relaxed before:content-['→'] before:absolute before:left-0 before:text-sky-400 before:text-[0.75rem]">{highlightText(b, experienceHighlights)}</li>
                     ))}
                   </ul>
                 </div>

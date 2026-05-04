@@ -1,4 +1,5 @@
 import { Mail, Phone, Link2, Send } from "lucide-react";
+import { personal } from "../data/resume";
 
 export function Contact() {
   return (
@@ -20,14 +21,14 @@ export function Contact() {
           </h2>
 
           <p className="reveal text-[var(--text-2)] text-sm leading-relaxed mb-8">
-            Open to senior tech lead, cloud architect, and full-stack leadership roles.
+            Open to senior tech lead, cloud specialist, and full-stack leadership roles.
             Let&apos;s connect and create something impactful.
           </p>
 
           {/* Buttons */}
           <div className="reveal flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="mailto:agharatarun@gmail.com"
+              href={`mailto:${personal.email}`}
               className="
                 inline-flex items-center justify-center gap-2
                 px-5 py-3 rounded-xl
@@ -37,10 +38,10 @@ export function Contact() {
                 transition-all duration-200
               "
             >
-              <Mail size={15} /> agharatarun@gmail.com
+              <Mail size={15} /> {personal.email}
             </a>
             <a
-              href="tel:+919327133900"
+              href={`tel:${personal.phone.replace(/[^\d+]/g, "")}`}
               className="
                 inline-flex items-center justify-center gap-2
                 px-5 py-3 rounded-xl
@@ -51,10 +52,10 @@ export function Contact() {
                 transition-all duration-200
               "
             >
-              <Phone size={15} /> +91-9327133900
+              <Phone size={15} /> {personal.phone}
             </a>
             <a
-              href="https://www.linkedin.com/in/agharatarun"
+              href={personal.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -67,7 +68,7 @@ export function Contact() {
                 transition-all duration-200
               "
             >
-              <Link2 size={15} /> LinkedIn Profile
+              <Link2 size={15} /> {personal.linkedin}
             </a>
           </div>
         </div>
